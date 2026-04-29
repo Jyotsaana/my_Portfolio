@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.desktopmenu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+}
+
+.desktopmenu a {
+    height: auto;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.desktopmenu a:hover {
+    background-color: #f0f0f0;
+    color: #111;
+    opacity: 1;
+}
+
+.desktopmenubtn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: auto;
+    width: auto;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #d0c5c5;
+    color: #121212;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.desktopmenubtn:hover {
+    background-color: #333;
+    color: #ccc;
+}
+
+.menu {
+    height: 1rem;
+    width: 1rem;
+    object-fit: contain;
+}
