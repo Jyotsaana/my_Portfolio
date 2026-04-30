@@ -1,0 +1,165 @@
+/* /* .project-title{
+    font-size: 2em;
+    font-weight: 1000px;
+}
+
+.project-box{
+    display: flex;
+    gap:2rem;
+    flex-wrap:wrap;
+     
+    justify-content:center;
+
+}
+
+
+.project-card{
+    border: 1px  solid rgb(138, 100, 53);
+    box-shadow: inset 0 0 10px black;
+    padding-left:15px;
+    min-height:300px;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    /* gap:.5rem; */
+   /* background-color: #9b9b9b;
+    justify-content:center;
+    /* height:auto;
+    width:fit-content; */
+    /* color: rgb(0, 0, 0); */
+/* }
+
+ .project-card a{
+    color:rgb(14, 14, 14);
+    text-decoration:underline; 
+
+      
+    
+}
+
+.img{ 
+    height:150px;
+    width:200px;
+    object-fit:cover;
+}   */ */
+
+
+
+.project-title {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.project-box {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 5%;
+}
+
+.project-card {
+    border: 1px solid rgb(138, 100, 53);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    min-height: 300px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.project-card a {
+    color: #111;
+    text-decoration: underline;
+}
+
+.project-card a:hover {
+    color: rgb(138, 100, 53);
+}
+
+.img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    .project-box {
+        gap: 1.5rem;
+        padding: 1.5rem 4%;
+    }
+
+    .project-card {
+        width: calc(50% - 1.5rem);
+        min-height: auto;
+    }
+
+    .project-title {
+        font-size: 1.6em;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .project-box {
+        gap: 1rem;
+        padding: 1rem 5%;
+    }
+
+    .project-card {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .project-title {
+        font-size: 1.4em;
+    }
+
+    .img {
+        height: 180px;
+    }
+}
+
+/* Large screen */
+@media (min-width: 1200px) {
+    .project-card {
+        width: 320px;
+    }
+
+    .project-box {
+        gap: 2.5rem;
+        padding: 2rem 8%;
+    }
+}

@@ -17,7 +17,7 @@ function Hero() {
           and great user experiences.
         </p>
         <div className="hero-buttons">
-          <a href="#projects" className="btn-primary">View Projects</a>
+          <a href="#project" className="btn-primary">View Projects</a>
           <a href={resume} download="resume.pdf" className="btn-secondary">Download Resume</a>
         </div>
       </div>

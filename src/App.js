@@ -1,5 +1,6 @@
 import Navbar from "./component/navbar/navbar"
 import Hero from "./component/intro/hero"
+import Project from "./component/projects/project"
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       
   <Navbar/>
   <Hero/>
+  <Project/>
     </div>
   );
 }
