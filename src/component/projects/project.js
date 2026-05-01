@@ -7,7 +7,7 @@ function Project() {
     {
       title: "My Portfolio",
       description: "A personal portfolio website built with React showcasing my skills.",
-      techStack: ["React", "CSS","JavaScript"],
+      techStack: ["React", "CSS","JavaScript","Framer motion"],
       github:"https://github.com/Jyotsaana/my_Portfolio",
       img:"vecteezy_3d-illustration-graphic-design_13473643.png",
     },
@@ -30,7 +30,7 @@ function Project() {
   return (
     <div id="project">
       <h2 className='project-title'>My Projects</h2>
-      <p>Projects I have built are:</p>
+      {/* <p>Projects I have built are:</p> */}
 
       <div className='project-box' >
         {projects.map((project, index) => (

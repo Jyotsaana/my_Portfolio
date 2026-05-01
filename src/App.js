@@ -1,14 +1,18 @@
 import Navbar from "./component/navbar/navbar"
-import Hero from "./component/intro/hero"
+import About from "./component/intro/about"
 import Project from "./component/projects/project"
+import Contact from "./component/contact/contact"
+import Message from "./component/message/message"
 
 function App() {
   return (
     <div className="App">
       
   <Navbar/>
-  <Hero/>
+  <About/>
   <Project/>
+  <Contact/>
+  <Message/>
     </div>
   );
 }

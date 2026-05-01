@@ -4,6 +4,14 @@ import './navbar.css'
 import menuIcon from '../../assets/menu.png'
 import resume from '../../assets/resume.pdf'
 
+ function Handlescroll(e,targetId){
+  e.preventDefault();
+  const target=document.getElementById(targetId);
+  if(target){
+    target.scrollIntoView({behaviour:'smooth', block: 'start'});
+  }
+ }
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -14,12 +22,12 @@ function Navbar() {
       </div>
 
       <div className="desktopmenu">
-        <a href='#home'>Home</a>
-        <a href='#about'>About</a>
-        <a href='#project'>Projects</a>
-        <a href={resume} >Resume</a>
-        <a href='#contact'>Contact</a>
-        <a href='#contact'>Message me</a>
+        {/* <a href='#home'>Home</a> */}
+        <a href='#about' onClick={(e) => Handlescroll(e, 'about')}>About</a>
+        <a href='#project' onClick={(e) => Handlescroll(e, 'project')}>Projects</a>
+        <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href='#contact' onClick={(e) => Handlescroll(e, 'contact')}>Contact</a>
+        <a href='#contact' onClick={(e) => Handlescroll(e, 'contact')}>Message me</a>
 
       </div>
 
